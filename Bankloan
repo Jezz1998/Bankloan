@@ -1,0 +1,25 @@
+print("Hi! It's 'Bank Of Business'")
+name = input("Enter your name: ")
+print("Hello " + name + "! Welcome to 'BOB Puthiya Loan Scheme'. Please answer following questions.")
+age = input("Enter your age: ")
+salary = input("Enter your monthly income: ")
+if float(salary) >= 75000.00:
+  has_good_salary = True
+elif float(salary) < 75000.00:
+  has_good_salary = False
+criminal_record = input("Do you have any criminal record(If Yes put 1/If Not put 0): ")
+if int(criminal_record) == 1:
+  has_criminal_record = True
+elif int(criminal_record) == 0:
+  has_criminal_record = False
+own_property = input("Do you own any land(If Yes put 1/If Not put 0): ")
+if int(own_property) == 1:
+  has_own_property = True
+elif int(own_property) == 0:
+    has_own_property = False
+
+
+if 25 <= int(age) <= 45 and has_good_salary and has_own_property and not has_criminal_record:
+    print("Congradulation. You are elegible for our 'BOB Puthiya Loan Scheme'. Contact our nearest BOB branch. \n Thank you. ")
+else:
+    print("Sorry. According to our loan policy: you are not eligible for our 'BOB Puthiya Loan Scheme'. \n Contact our nearest BOB branch for other loan services.\n Thank you. ")
